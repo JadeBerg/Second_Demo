@@ -2,6 +2,8 @@
 data "aws_ami" "latest_amazon_linux" {
     owners = ["amazon"]
     most_recent = true
+
+    # Filter for searching ami
     filter{
         name = "name"
         values = ["amzn2-ami-kernel-5.10-hvm-*-x86_64-gp2"]
@@ -28,6 +30,7 @@ resource "aws_launch_configuration" "launch" {
     security_groups = [var.vpc_sg_ec2_ids.id]
     instance_type = var.instance_type
 
+    # User data for instances
     user_data = templatefile("./mod/ec2/start.tpl", {
       r_url = aws_ecr_repository.ecr_repository.repository_url
       image_tag = var.image_tag

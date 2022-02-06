@@ -37,6 +37,7 @@ resource "aws_internet_gateway" "IGateWay" {
 
 }
 
+# Connect internet
 resource "aws_route" "internet_access" {
   depends_on = [aws_internet_gateway.IGateWay]
   route_table_id         = var.vpc.main_route_table_id
@@ -72,6 +73,7 @@ resource "aws_route_table" "private_route" {
   count  = var.az_count
   vpc_id = var.vpc.id
 
+  # Connect private subnet to Nat Gateway
   route {
     cidr_block     = "0.0.0.0/0"
     nat_gateway_id = element(aws_nat_gateway.NatGateWay.*.id, count.index)

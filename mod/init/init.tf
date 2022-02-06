@@ -1,3 +1,4 @@
+# Local build and push docker image
 resource "null_resource" "build" {
   provisioner "local-exec" {
     command = "make build"
