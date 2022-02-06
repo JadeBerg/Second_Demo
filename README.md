@@ -11,3 +11,15 @@
 > 6) `Elastic container registry` for keeping our image(ECR)
 > 7) `Iam Role` for giving access our instances to ECR(ReadOnly)
 > 8) `Null resource` for local build our image and push to ECR
+
+### Description of files in main directory
+
+> `main.tf` - my infrastructure build with terraform modules in this file we describe our modules
+
+> `var.tf` - in this file i keep region for my infrastructure, which i use in code very often
+
+> `output.tf` - this file output the url to our load balancer for convenience
+
+> `mod` - in this directory we have our modules for build our infrastructure
+
+> `app_docker` - in this directory we have our application, Dockerfile and Makefile
