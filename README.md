@@ -1,5 +1,5 @@
 # Second_Demo
-## Main topic of this demo build a working infrastructure with terraform code
+## Main topic of this demo: Build a working infrastructure with terraform code
 
 ### In my version of demo i create such resources as:
 
