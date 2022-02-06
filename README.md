@@ -1,7 +1,7 @@
 # Second_Demo
-# Main topic of this demo build a working infrastructure with terraform code
+## Main topic of this demo build a working infrastructure with terraform code
 
-## In my version of demo i create such resources as:
+### In my version of demo i create such resources as:
 
 > 1) `VPC`(It contains other resources)
 > 2) `Load Balancer`(For balancing our instances)
