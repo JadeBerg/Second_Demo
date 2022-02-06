@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Casino_form</title>
+	<link rel="stylesheet" type="text/css" href="help.css">
+	<script src="animation.js"></script>
+	<script type="text/javascript"> 
+		window.onload = function () {
+			moveLogo();
+		};
+	</script>
+</head>
+<body>
+	<div id="case">
+		<div id="head">
+			<div id="log">
+				<a href="redirect.html"><img alt="Казино" id="logo" src="img/Casin.png"></a>
+			</div>
+			<div class="loop">
+				<a href = "Form.html"><img alt="Рулетка" src="img/loop.jpg"></a>
+			</div>
+		</div>
+		<div id="cont">
+			<div class="menu-block">
+				<div class="left-menu-blk">
+					<p id="menu">MENU</p>
+					<div class="names">
+						<a class="points_l" href="">HOME</a>
+						<a class="points_l" href="">DOWNLOAD</a>
+						<a class="points_l" href="">PREVIEW</a>
+						<a class="points_l" href="">ABOUT US</a>
+						<a class="points_l" href="">SUPPORT</a>
+						<a class="points_l" href="">CASHIER</a>
+						<a class="points_l" href="">SECURITY</a>
+						<a class="points_l" href="">FAIR GAMING</a>
+						<a class="points_l" href="">NEWS</a>
+					</div>
+				</div>
+				<div class="left-banners">
+					<img alt="Visa" src="img/visa.png">
+					<img alt="Firepay" src="img/firepay.png">
+					<img alt="Bossmedia" src="img/bossmedia.png">
+					<img alt="Webdollar" src="img/webdollar.png">
+				</div>
+			</div>
+			<div class="back-menu">
+				<img src="img/main-head.jpg" alt="Рулетка">
+				<div class="back">
+					<div class="col">
+						<!-- -->
+						<form id="user_form" action="" method="POST" onsubmit="return validateForm();" enctype="multipart/form-data">
+				
+							<!--First name input block-->
+				  			<div class="row">
+				    			<label class="required" for="firstName">First name / Имя:</label><br />
+				    			<input id="firstName" name="firstName" type="text" value="" class="textField"/><br />
+				    			<span id="firstName_validation" class="error"></span>
+				  			</div>
+
+							<!--Second name input block-->
+							<div class="row">
+				    			<label class="required" for="secondName">Second name / Фамилия:</label><br />
+				    			<input id="secondName" name="secondName" type="text" value="" class="textField"/><br />
+				    			<span id="secondName_validation" class="error"></span>
+				  			</div>
+
+				  			<!--Second name input block-->
+				  			<div class="row">
+				    			<label class="required" for="middleName">Middle name / Отчество:</label><br />
+				    			<input id="middleName" name="middleName" type="text" value="" class="textField"/><br />
+				    			<span id="middleName_validation" class="error"></span>
+				  			</div>
+
+				  			<!--Preferences input block-->
+				  			<div class="preferencesDiv">
+				    			<label class="required">Preferences / Предпочтения:</label><br />
+				    			<input type="checkbox" name="preferences[]" id="study" value="study" /> Study / Учёба<br />
+				    			<input type="checkbox" name="preferences[]" id="sport" value="sport" /> Sport / Спорт<br />
+				    			<input type="checkbox" name="preferences[]" id="reading" value="reading" /> Reading / Чтение<br />
+				    			<input type="checkbox" name="preferences[]" id="music" value="music"/> Games / Игры <br />
+				    			<input type="checkbox" name="preferences[]" id="music" value="music" /> Music / Музыка<br />
+				    			<input type="checkbox" name="preferences[]" id="dance" value="dance" /> Dance / Танцы<br />
+				    			<input type="checkbox" name="preferences[]" id="painting" value="painting" /> Painting / Рисование<br />
+				    			<span id="preferences_validation" class="error" ></span>
+				  			</div>
+
+		  					<!--Sending form data by POST method-->
+		    				<input type="submit" value="Try!"/>
+						</form>
+					</div>
+					<script src="validation.js"></script>
+				</div>
+				<div class="main-foot"></div>
+			</div>
+			<div class="games-block">
+				<p id="games">GAMES</p>
+				<div class="names">
+					<a class="points_r" href="">Blackjack</a>
+					<a class="points_r" href="">Slots</a>
+					<a class="points_r" href="">Craps</a>
+					<a class="points_r" href="">Video poker</a>
+					<a class="points_r" href="">Roulette</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
