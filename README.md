@@ -14,7 +14,7 @@
 
 ### Description of files in main directory
 
-> `main.tf` - my infrastructure build with terraform modules in this file we describe our modules
+> `main.tf` - my infrastructure creates with terraform modules in this file we describe our modules
 
 > `var.tf` - in this file i keep region for my infrastructure, which i use in code very often
 
